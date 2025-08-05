@@ -1,0 +1,121 @@
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color: #ffffff;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #1b1b1b;
+      
+      padding: 40px 60px;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 100px;
+      border-bottom: 1px solid #333; /* Linha fina */
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    nav {
+        display: flex;
+        gap: 20px; /* Espaço entre os ícones/links */
+        align-items: center;
+        
+    } 
+      
+    nav a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 0.9rem;
+      margin-bottom: 6px;
+      
+    }
+    nav i {
+        font-size: 2rem; /* ou 32px, ajuste como preferir */
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      font-size: 1.8rem;
+      max-width: 800px;
+      margin-bottom: 120px;
+    }
+
+    .projetos h1 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin-bottom: 60px;
+        display: flex;
+        justify-self: center;
+    }
+    .projects {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 120px;
+    }
+    .grid-container {
+        column-count: 2;
+        column-gap: 16px; /* Espaço horizontal entre as colunas */
+        width: 700px;
+        margin: 0 auto;
+    }
+
+    .grid-item {
+        break-inside: avoid;
+        margin-bottom: 16px; /* Espaço vertical entre as imagens */
+        padding: 0;
+    }
+    .grid-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0; /* Remove margem extra */
+        padding: 0; /* Remove padding extra */
+    }
+    .grid-item img:hover {
+        transform: scale(1.01);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+    #img-rotate {
+        transform: rotate(90deg);
+    }
+
+    footer {
+        border-top: 1px solid #333; /* Linha fina */
+        font-size: 0.9rem;
+        color: #555;
+        text-align: center;
+    }
+    footer a {
+        margin-top: 40px;
+        text-decoration: underline;
+    }
+    footer div {
+        margin-top: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 30px;
+      }
+      .projects {
+        grid-template-columns: 1fr;
+      }
+      header {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
