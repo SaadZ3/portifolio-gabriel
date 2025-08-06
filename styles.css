@@ -1,3 +1,12 @@
+:root {
+      --primary-bg: #0a0a0a;
+      --secondary-bg: #111111;
+      --accent-color: #9335ff;
+      --text-primary: #ffffff;
+      --text-secondary: #a0a0a0;
+      --border-color: #222222;
+      --hover-color: #1a1a1a;
+    }
 
 * {
       margin: 0;
@@ -7,50 +16,137 @@
     }
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #1b1b1b;
-      
-      padding: 40px 60px;
+      background: linear-gradient(135deg, var(--primary-bg) 0%, #0f0f0f 100%);
+      color: var(--text-primary);
       line-height: 1.6;
+      overflow-x: hidden;
     }
     header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 20px 60px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 100px;
-      border-bottom: 1px solid #333; /* Linha fina */
+      transition: all 0.3s ease;
+      border-bottom: 1px solid #333;
+    }
+    header.scrolled {
+      padding: 15px 60px;
+      background: rgba(10, 10, 10, 0.95);
     }
 
+    nav {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+    nav a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      position: relative;
+      padding: 10px;
+    }
+    nav a:hover {
+      color: var(--accent-color);
+      transform: translateY(-2px);
+    }
+
+    nav i {
+      font-size: 2rem; /* ou 32px, ajuste como preferir */
+    }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       font-weight: 500;
       margin-bottom: 10px;
     }
-    nav {
-        display: flex;
-        gap: 20px; /* Espaço entre os ícones/links */
-        align-items: center;
-        
-    } 
-      
-    nav a {
-      text-decoration: none;
-      color: #ffffff;
-      font-size: 0.9rem;
-      margin-bottom: 6px;
-      
-    }
-    nav i {
-        font-size: 2rem; /* ou 32px, ajuste como preferir */
+    header h1::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background: var(--accent-color);
+      border-radius: 2px;
     }
     nav a:hover {
       text-decoration: underline;
     }
+    
+    /* Hero Section  ====================================================================================*/
     .hero {
-      font-size: 1.8rem;
-      max-width: 800px;
-      margin-bottom: 120px;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      background: radial-gradient(ellipse at center, rgba(174, 53, 255, 0.1) 0%, transparent 70%);
+    }
+    .hero-content {
+      max-width: 900px;
+      padding: 0 60px;
+      animation: fadeInUp 1s ease 0.5s both;
+    }
+    .hero h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(3rem, 8vw, 6rem);
+      font-weight: 700;
+      margin-bottom: 20px;
+      background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.1;
+    }
+    .hero-subtitle {
+      font-size: 1.3rem;
+      color: var(--text-secondary);
+      margin-bottom: 40px;
+      font-weight: 300;
+    }
+    .cta-button {
+      display: inline-block;
+      padding: 15px 40px;
+      background: linear-gradient(135deg, var(--accent-color), #65c1ff);
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 30px rgba(53, 100, 255, 0.3);
     }
 
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 40px rgba(68, 102, 255, 0.2);
+    }
+
+    /* Scroll indicator */
+    .scroll-indicator {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: bounce 2s infinite;
+    }
+
+    .scroll-indicator i {
+      font-size: 1.5rem;
+      color: var(--text-secondary);
+    }
+
+
+    
+    /* Projetos Section  ====================================================================================*/
     .projetos h1 {
         font-size: 2.5rem;
         font-weight: 500;
@@ -58,39 +154,142 @@
         display: flex;
         justify-self: center;
     }
+    /* projects-section ou project-0g*/
     .projects {
         display: flex;
         justify-content: center;
         margin-bottom: 120px;
     }
+    
+    /* grid-container */
     .grid-container {
         column-count: 2;
         column-gap: 16px; /* Espaço horizontal entre as colunas */
-        width: 700px;
+        width: 800px;
         margin: 0 auto;
     }
 
+    /* project-card */
     .grid-item {
+        position: relative;
+        overflow: hidden;
         break-inside: avoid;
+        background: var(--hover-color);
+        transition: all 0.4s ease;
         margin-bottom: 16px; /* Espaço vertical entre as imagens */
         padding: 0;
+        overflow: hidden;
+        cursor: pointer;
     }
     .grid-item img {
+        display: block;
         width: 100%;
         height: auto;
-        display: block;
-        margin: 0; /* Remove margem extra */
-        padding: 0; /* Remove padding extra */
+        object-fit: cover;
+        transition: transform 0.4s ease;
     }
-    .grid-item img:hover {
-        transform: scale(1.01);
+    .grid-item:hover img{
+        transform: scale(1.05);
         transition: transform 0.3s ease;
         cursor: pointer;
     }
-    #img-rotate {
-        transform: rotate(90deg);
+    
+
+    .project-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+      opacity: 0;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: flex-end;
+      padding: 30px;
+    }
+    .grid-item:hover .project-overlay {
+      opacity: 1;
+    }
+    .project-info h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 10px;
     }
 
+
+    /* About Section */
+    .about-section {
+      padding: 120px 60px;
+      /* text-align: center; */
+    }
+    .about-section h2 {
+      font-size: 2.5rem;
+      font-weight: 500;
+      margin-bottom: 60px;
+      text-align: center;
+      color: var(--text-primary);
+    }
+
+    .about-content {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    .about-grid {
+      display: flex;
+      gap: 40px; /* Espaço entre imagem e textos */
+      align-items: flex-start;
+      margin-top: 40px;
+    }
+    .section-title, header h1 {
+      position: relative;
+    }
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: var(--accent-color);
+      border-radius: 3px;
+    }
+    .about-img {
+      flex: 0 0 300px; /* Largura fixa para a imagem, ajuste conforme necessário */
+      max-width: 300px;
+    }
+    .about-img img {
+      width: 107%;
+      height: auto;
+      display: block;
+      border-radius: 8px; /* Opcional */
+    }
+    .about-img:hover img {
+      transform: scale(1.005);
+      transition: transform 0.3s ease;
+    }
+
+    .about-text {
+      flex: 1;
+      display: flex;
+      gap: 32px;
+      justify-content: space-between;
+      
+      
+      
+
+    }
+    .about-text > div {
+        flex: 1;
+        min-width: 0;
+        text-align: justify;
+        color: var(--text-secondary);
+        margin-bottom: 40px;
+        font-weight: 300;
+    }
+
+    /* footer =================================================== */
     footer {
         border-top: 1px solid #333; /* Linha fina */
         font-size: 0.9rem;
