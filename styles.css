@@ -158,7 +158,7 @@
     .projects {
         display: flex;
         justify-content: center;
-        margin-bottom: 120px;
+        margin-bottom: 140px;
     }
     
     /* grid-container */
@@ -222,6 +222,7 @@
     .about-section {
       padding: 120px 60px;
       /* text-align: center; */
+      border-top: 1px solid #333;
     }
     .about-section h2 {
       font-size: 2.5rem;
@@ -234,6 +235,7 @@
     .about-content {
       max-width: 80%;
       margin: 0 auto;
+      
     }
     .about-grid {
       display: flex;
@@ -275,9 +277,15 @@
       display: flex;
       gap: 32px;
       justify-content: space-between;
+      margin-bottom: 60px;
+      font-size: 0.97rem;
       
-      
-      
+    }
+    .about-text h4 {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 5px;
+        color: var(--text-primary);
 
     }
     .about-text > div {
@@ -291,19 +299,53 @@
 
     /* footer =================================================== */
     footer {
-        border-top: 1px solid #333; /* Linha fina */
-        font-size: 0.9rem;
-        color: #555;
-        text-align: center;
+      /* background: var(--primary-bg); */
+      border-top: 1px solid #333;
+      padding: 60px;
+      text-align: center;
     }
-    footer a {
-        margin-top: 40px;
-        text-decoration: underline;
+
+    .footer-content {
+      max-width: 600px;
+      margin: 0 auto;
     }
-    footer div {
-        margin-top: 40px;
-        justify-content: center;
-        align-items: center;
+
+    .contact-info {
+      margin-bottom: 5px;
+    }
+
+    .contact-info a {
+      color: #a455fd;
+      text-decoration: none;
+      font-weight: 5200;
+      transition: all 0.3s ease;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-social {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+
+    .footer-social a {
+      color: var(--text-secondary);
+      font-size: 1.7rem;
+      transition: all 0.3s ease;
+    }
+
+    .footer-social a:hover {
+      color: var(--accent-color);
+      transform: translateY(-3px);
+    }
+
+    .copyright {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
     }
 
     @media (max-width: 768px) {
