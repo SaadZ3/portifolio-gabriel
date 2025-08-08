@@ -1,12 +1,18 @@
 :root {
-      --primary-bg: #0a0a0a;
-      --secondary-bg: #111111;
-      --accent-color: #5a35ff;
-      --text-primary: #ffffff;
-      --text-secondary: #a0a0a0;
-      --border-color: #222222;
-      --hover-color: #1a1a1a;
-    }
+  --primary-bg: #0a0a0a;
+  --secondary-bg: #111111;
+  --accent-color: #5a35ff;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --border-color: #222222;
+  --hover-color: #1a1a1a;
+}
+
+.raleway-ThinItalic {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
 
 * {
       margin: 0;
@@ -24,6 +30,11 @@ body {
 }
 a, button, img {
   cursor: none !important;
+}
+nav a:hover i,
+.footer-social a:hover i {
+  color: var(--accent-color);
+  transition: color 0.3s;
 }
 /* curso por imagens -------------- */
 #cursor-circle,
@@ -175,20 +186,20 @@ header h1::after {
   font-weight: 300;
 }
 .cta-button {
-  display: inline-block;
+  /* display: inline-block; */
   padding: 15px 40px;
   background: linear-gradient(135deg, var(--accent-color), #65c1ff);
   color: white;
   text-decoration: none;
   border-radius: 50px;
   font-weight: 500;
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
   box-shadow: 0 10px 30px rgba(53, 100, 255, 0.3);
 }
 
 .cta-button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(68, 102, 255, 0.2);
+  box-shadow: 0 15px 40px rgba(68, 102, 255, 0.493);
 }
 
 /* Scroll indicator */
@@ -419,6 +430,14 @@ footer {
   padding: 40px;
   overflow-y: auto;
 }
+#gallery-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  font-weight: 200;
+}
+
 
 .close-modal {
   position: absolute;
@@ -426,7 +445,7 @@ footer {
   right: 30px;
   font-size: 2rem;
   color: white;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 /* Grade de imagens */

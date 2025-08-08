@@ -1,7 +1,7 @@
-
+// função de pegar o ano -----------------------------------------------------------------------------------------------------------
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Header scroll effect
+// cabeçalho fluido e fixo ao descer a página --------------------------------------------------------------------------------------
 window.addEventListener('scroll', () => {
   const header = document.getElementById('header');
   if (window.scrollY > 100) {
@@ -11,7 +11,7 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// Smooth scrolling for navigation links
+// movimento suave para links de âncoras -------------------------------------------------------------------------------------------
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -25,7 +25,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Intersection Observer for animations
+// animação de fade-in para cards ------------------------------------------------------------------------------------------------
 const observerOptions = {
   threshold: 0.1,
   rootMargin: '0px 0px -50px 0px'
@@ -49,9 +49,35 @@ document.querySelectorAll('.grid-item').forEach(card => {
 });
 
 
+// Animação de scroll com ScrollReveal.js -------------------------------------------------------------------------------------------
+window.sr = ScrollReveal({ reset: false });
+sr.reveal('.h1-principal', {
+    delay: 300,
+    duration: 1800,
+    distance: '60px'
+    
+});
+sr.reveal('.hero-subtitle', {
+    delay: 900,
+    duration: 3000,
+    distance: '40px'
+});
+sr.reveal('.cta-button', {
+    delay: 1000,
+    duration: 3000,
+    distance: '50px'
+});
+sr.reveal('.about-text', {
+    duration: 2500,
+    distance: '30px'
+});
+sr.reveal('.about-image', {
+    duration: 2500,
+    distance: '30px'
+});
 
 
-// circulo roxo
+// circulo roxo ------------------------------------------------------------------------------------------------
 const cursor = document.getElementById('cursor-circle');
 const inverter = document.getElementById('cursor-inverter');
 const images = document.querySelectorAll('.grid-item');
@@ -75,7 +101,7 @@ function animateCursor() {
 }
 animateCursor();
 
-// expandir ciruclo com imagens
+// expandir ciruclo com imagens ------------------------------------------------------------
 images.forEach(img => {
   img.addEventListener('mouseenter', () => {
     cursor.classList.add('expanded');
@@ -98,14 +124,13 @@ images.forEach(img => {
   });
 });
 
-// expansão menor do criculo
-
+// expansão menor do criculo ----------------------------------------------------------------
 const interactiveElements = [
   ...document.querySelectorAll('header nav a'),
   ...document.querySelectorAll('.cta-button'),
   ...document.querySelectorAll('footer .footer-social a'),
   ...document.querySelectorAll('footer .contact-info a'),
-  ...document.querySelectorAll('span .close-modal')
+  ...document.querySelectorAll('.close-modal'),
 ];
 interactiveElements.forEach(el => {
   el.addEventListener('mouseenter', () => {
@@ -117,7 +142,7 @@ interactiveElements.forEach(el => {
   });
 });
 
-// Toggle menu mobile
+// Toggle menu mobile -------------------------------------------------------------------
 const menuToggle = document.getElementById('menu-toggle');
 const navMenu = document.getElementById('nav-menu');
 const ve = false;
@@ -126,7 +151,7 @@ menuToggle.addEventListener('click', () => {
   navMenu.classList.toggle('show');
 });
   
-// Close menu when clicking outside
+// fechar menu ao clicar fora dele -----------------------------------------------------
 document.addEventListener('click', (event) => {
   if (!navMenu.contains(event.target) && !menuToggle.contains(event.target)) {
     navMenu.classList.remove('show');
@@ -134,8 +159,7 @@ document.addEventListener('click', (event) => {
 });
 
 
-// Gallery modal functionality
-// Galeria de imagens relacionadas
+// Galeria de imagens relacionadas ------------------------------------------------------
 const galleryData = {
   "Death Stranding": [
     "images/6 death stranding/deathstrandingposter.png",
@@ -250,7 +274,72 @@ const galleryData = {
   ]
 };
 
+textData = {
+  "Death Stranding": [ 
+    "Death Stranding",
+    "Fragmentos suspensos no tempo. A presença pesa, a ausência também. Caminhar é inventar caminhos num mundo desfeito.", 
+  ],
+  "Abbey Road": [
+    "Abbey Road - The Beatles",
+    "Quatro passos cruzam o mesmo chão, mas seguem em direções diferentes. O instante entre um pé e o outro é onde tudo se transforma."
+  ],
+  "Tranquility Base Hotel and Casino": [
+    "Tranquility Base Hotel & Casino – Arctic Monkeys",
+    "Nada é real — só reflexos metálicos, anúncios quebrados e um piano flutuando no vácuo. Check-in para lugar nenhum."
+  ],
+  "Wish you Were Here": [
+    "Wish You Were Here – Pink Floyd",
+    "Dois corpos distantes acenam um para o outro sem saber se estão vivos. O calor de um aperto de mãos invisível."
+  ],
+  "Blade Runner": [
+    "Blade Runner",
+    "Luzes trêmulas sob chuva ácida. Memórias artificiais, olhos molhados. O que é humano já não importa.",
+  ],
+  "Um jogo de você": [
+    "Um jogo de você",
+    "Um corpo, tempo moldado, dissolve o ego em poeira de estrelas, e a essência se liberta na vastidão do cosmos."
+  ],
+  "Animals": [
+    "Animals – Pink Floyd",
+    "A cidade late, ruge, grita. Os prédios observam. No céu, um porco flutua — dócil e ameaçador."
+  ],
+  "Dark Side Of The Moon": [
+    "The Dark Side of the Moon – Pink Floyd",
+    "Tudo o que não se diz vibra aqui. Um feixe atravessa a escuridão e revela cores que não têm nome."
+  ],
+  "BlackStar": [
+    "Blackstar – David Bowie",
+    "Uma estrela oca, brilhando na escuridão que engole tudo. Silêncio e espaço em tensão, como um presságio manso."
+  ],
+  "The Wall": [
+    "The Wall – Pink Floyd",
+    "Um muro que não separa, mas ecoa. Cada bloco carrega vozes presas, gritos mudos. O peso da construção é o próprio cansaço"
+  ],
+  "Expensive Shit": [
+    "Expensive Shit – Fela Kuti",
+    "Ritmo e caos no mesmo pulso. Um grito seco que dança, uma ironia vestida de ouro sujo."
+  ],
+  "All Things Must Pass": [
+    "All Things Must Pass – George Harrison",
+    "A terra absorve tudo: a dor, a fé, o tempo. O sol volta, mesmo que devagar. Nada fica. Tudo floresce."
+  ],
+  "Station to Station": [
+    "Station to Station – David Bowie",
+    "Entre um ponto e outro, não há destino. Só deslocamento. A identidade escapa pelos trilhos."
+  ],
+  "Surrealismo": [
+    "Surrealismo",
+    "Medos e desejos se embaralham no reflexo. A pele é máscara e espelho. Algo observa — de longe, de dentro."
+  ],
+  "Sex Pistols": [
+    "Never Mind the Bollocks – Sex Pistols",
+    "Nada é sutil. Tudo explode, sem cerimônia. A sujeira vira cor. A raiva vira riso."
+  ]
+}
+
 const modal = document.getElementById("gallery-modal");
+const texto = document.getElementById("gallery-title"); // ====
+const subtitle = document.getElementById("gallery-description"); // ====
 const closeBtn = document.querySelector(".close-modal");
 const galleryGrid = document.getElementById("gallery-grid");
 const singleView = document.getElementById("single-view");
@@ -259,6 +348,7 @@ const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
 
 let currentGallery = [];
+let currentText = [];
 let currentIndex = 0;
 
 // Abrir modal em grid
@@ -274,6 +364,16 @@ document.querySelectorAll(".grid-item").forEach(item => {
         img.addEventListener("click", () => openSingleView(index));
         galleryGrid.appendChild(img);
       });
+
+      // Adiciona título e subtítulo da galeria
+      if (textData[title]) {
+        document.getElementById("gallery-title").textContent = textData[title][0];
+        document.getElementById("gallery-description").textContent = textData[title][1];
+      } else {
+        document.getElementById("gallery-title").textContent = title;
+        document.getElementById("gallery-description").textContent = "";
+      }
+
       modal.style.display = "block";
       singleView.style.display = "none";
     }
