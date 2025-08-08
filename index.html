@@ -9,21 +9,25 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div id="cursor-circle">
+    <span id="cursor-text">VIEW</span>
+  </div>
+  <div id="cursor-inverter"></div>
 
-  <header>
-  <h1>Gabriel Napoleão</h1>
-  <nav>
-    <a href="https://www.instagram.com/hipgn.osis/" target="_blank">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/gabriel-napoleão-20ab2b202" target="_blank">
-      <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="https://www.behance.net/gabrielnapoleo" target="_blank">
-      <i class="fa-brands fa-square-behance"></i>
-    </a>
-  </nav>
-</header>
+  <header id="header">
+    <h1>Gabriel Napoleão</h1>
+    <!-- Botão de menu mobile -->
+    <button id="menu-toggle" class="menu-toggle">
+      <i class="fas fa-ellipsis-v"></i>
+    </button id="nav-menu">
+      <nav id="nav-menu">
+      <a href="#sobre" class="nav-link">Sobre</a>
+      <a href="https://www.instagram.com/hipgn.osis/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/gabriel-napoleão-20ab2b202" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.behance.net/gabrielnapoleo" target="_blank"><i class="fa-brands fa-square-behance"></i></a>
+    </nav>
+    
+  </header>
 
   <section class="hero">
     <div class="hero-content">
@@ -56,38 +60,6 @@
           </div>
         </div>
         <div class="grid-item">
-          <img src="images/3 Animals/Nova pasta/animalsposter.definitivo.png" alt="Projeto 03">
-          <div class="project-overlay">
-            <div class="project-info">
-              <h3>Animals</h3>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item">
-          <img src="images/4 Blackstar/Nova pasta/blackcstar01.png" alt="Projeto 04">
-          <div class="project-overlay">
-            <div class="project-info">
-              <h3>BlackStar</h3>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item">
-          <img src="images/5 um jogo de voce/Nova pasta/um jogo de voce 2.png" alt="Projeto 05">
-          <div class="project-overlay">
-            <div class="project-info">
-              <h3>Um jogo de você</h3>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item">
-          <img src="images/7 All things must pass/Nova pasta/georgeharrison2.png" alt="Projeto 06">
-          <div class="project-overlay">
-            <div class="project-info">
-              <h3>All Things Must Pass</h3>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item">
           <img src="images/7.9  tranquility base hotel and casino/Nova pasta/tranquilitybasehotelandcasinoExpandidocomIA.jpg" alt="Projeto 07">
           <div class="project-overlay">
             <div class="project-info">
@@ -104,26 +76,26 @@
           </div>
         </div>
         <div class="grid-item">
-          <img src="images/1 Expansive shit/Nova pasta/fela kuti expensive shit.png" alt="Projeto 09">
+          <img src="images/blade runner/Nova pasta/bladerunnerposter.png" alt="Projeto 03">
           <div class="project-overlay">
             <div class="project-info">
-              <h3>Expensive Shit</h3>
+              <h3>Blade Runner</h3>
             </div>
           </div>
         </div>
         <div class="grid-item">
-          <img src="images/9 Nova pasta/defINVERSO.png" alt="Projeto 03">
+          <img src="images/5 um jogo de voce/Nova pasta/um jogo de voce 2.png" alt="Projeto 05">
           <div class="project-overlay">
             <div class="project-info">
-              <h3>Inverse</h3>
+              <h3>Um jogo de você</h3>
             </div>
           </div>
         </div>
         <div class="grid-item">
-          <img src="images/10 ESSA NAO ABRIRA NOVA PAG/sexpsitolsbanner.jpg" alt="Projeto 03">
+          <img src="images/3 Animals/Nova pasta/animalsposter.definitivo.png" alt="Projeto 03">
           <div class="project-overlay">
             <div class="project-info">
-              <h3>Sex Pistols</h3>
+              <h3>Animals</h3>
             </div>
           </div>
         </div>
@@ -136,29 +108,19 @@
           </div>
         </div>
         <div class="grid-item">
-          <img src="images/12 the wall/Nova pasta/Thewall_.png" alt="Projeto 03">
+          <img src="images/Metal gear/Nova pasta/snake2.png" alt="Projeto 03">
           <div class="project-overlay">
             <div class="project-info">
-              <h3>The Wall</h3>
+              <h3>Metal Gear</h3>
             </div>
           </div>
         </div>
-        <!-- <div class="grid-item">
-          <img src="images/13 the white album/Nova pasta/THEWHITE-ALBUM-BEATLES.png" alt="Projeto 03">
-        </div> -->
+        
         <div class="grid-item">
-          <img src="images/14 STATIOTOSTATION/Nova pasta/station-to-station-covervanilla.png" alt="Projeto 03">
+          <img src="images/4 Blackstar/Nova pasta/blackcstar01.png" alt="Projeto 04">
           <div class="project-overlay">
             <div class="project-info">
-              <h3>Station to Station</h3>
-            </div>
-          </div>
-        </div>     
-        <div class="grid-item">
-          <img src="images/blade runner/Nova pasta/bladerunnerposter.png" alt="Projeto 03">
-          <div class="project-overlay">
-            <div class="project-info">
-              <h3>Blade Runner</h3>
+              <h3>BlackStar</h3>
             </div>
           </div>
         </div>
@@ -171,13 +133,29 @@
           </div>
         </div>
         <div class="grid-item">
-          <img src="images/Metal gear/Nova pasta/snake2.png" alt="Projeto 03">
+          <img src="images/1 Expansive shit/Nova pasta/fela kuti expensive shit.png" alt="Projeto 09">
           <div class="project-overlay">
             <div class="project-info">
-              <h3>Metal Gear</h3>
+              <h3>Expensive Shit</h3>
             </div>
           </div>
         </div>
+        <div class="grid-item">
+          <img src="images/7 All things must pass/Nova pasta/georgeharrison2.png" alt="Projeto 06">
+          <div class="project-overlay">
+            <div class="project-info">
+              <h3>All Things Must Pass</h3>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img src="images/14 STATIOTOSTATION/Nova pasta/station-to-station-covervanilla.png" alt="Projeto 03">
+          <div class="project-overlay">
+            <div class="project-info">
+              <h3>Station to Station</h3>
+            </div>
+          </div>
+        </div>     
         <div class="grid-item">
           <img src="images/surrealismo trabalho final/Nova pasta/danieljp.jpg" alt="Projeto 03">
           <div class="project-overlay">
@@ -186,11 +164,40 @@
             </div>
           </div>
         </div>
+        <div class="grid-item">
+          <img src="images/10 ESSA NAO ABRIRA NOVA PAG/sexpsitolsbanner.jpg" alt="Projeto 03">
+          <div class="project-overlay">
+            <div class="project-info">
+              <h3>Sex Pistols</h3>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img src="images/9 Nova pasta/defINVERSO.png" alt="Projeto 03">
+          <div class="project-overlay">
+            <div class="project-info">
+              <h3>Inverse</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="grid-item">
+          <img src="images/13 the white album/Nova pasta/THEWHITE-ALBUM-BEATLES.png" alt="Projeto 03">
+        </div> -->
+        
+        <div class="grid-item">
+          <img src="images/12 the wall/Nova pasta/Thewall_.png" alt="Projeto 03">
+          <div class="project-overlay">
+            <div class="project-info">
+              <h3>The Wall</h3>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </section>
   
-  <section class="about-section">
+  <section id="sobre" class="about-section">
     <div class="about-content">
       <h2 class="section-title">Designer, Artista e Comunicador</h2>
       <div class="about-grid">
@@ -240,5 +247,6 @@
       </div>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
