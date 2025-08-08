@@ -451,13 +451,14 @@ footer {
 /* Grade de imagens */
 .gallery-grid {
   margin-top: 60px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 15px;
+  column-count: 4;           /* Número de colunas igual ao grid inicial */
+  column-gap: 20px;   
 }
 
 .gallery-grid img {
   width: 100%;
+  display: block;
+  margin-bottom: 16px;       /* Espaço entre as imagens */
   border-radius: 6px;
   cursor: pointer;
   transition: transform 0.3s;
@@ -512,7 +513,12 @@ footer {
     transform: translateX(-50%) translateY(-5px);
   }
 }
-
+@media (max-width: 768px) {
+  .gallery-grid {
+    column-count: 1;
+    column-gap: 0;
+  }
+}
 /* === RESPONSIVIDADE === */
 @media (max-width: 1500px) {
   .about-grid {

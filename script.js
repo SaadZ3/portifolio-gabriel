@@ -182,7 +182,6 @@ const galleryData = {
     "images/2 abbey road/abbeyroadlsd4commarcadaagua.png",
     "images/2 abbey road/abbeyroadoido01.png",
     "images/2 abbey road/abbeyroadooiderao2.png",
-    "images/2 abbey road/beatless.png",
   ],
   "Tranquility Base Hotel and Casino": [
     "images/7.9  tranquility base hotel and casino/TRANQUILITY BASE0101.png",
@@ -300,8 +299,8 @@ textData = {
     "Um corpo, tempo moldado, dissolve o ego em poeira de estrelas, e a essência se liberta na vastidão do cosmos."
   ],
   "Animals": [
-    "Animals – Pink Floyd",
-    "A cidade late, ruge, grita. Os prédios observam. No céu, um porco flutua — dócil e ameaçador."
+    "Animals",
+    "Pink Floyd A cidade late, ruge, grita. Os prédios observam. No céu, um porco flutua — dócil e ameaçador."
   ],
   "Dark Side Of The Moon": [
     "The Dark Side of the Moon – Pink Floyd",
@@ -329,6 +328,7 @@ textData = {
   ],
   "Surrealismo": [
     "Surrealismo",
+    "tes test teste",
     "Medos e desejos se embaralham no reflexo. A pele é máscara e espelho. Algo observa — de longe, de dentro."
   ],
   "Sex Pistols": [
