@@ -74,22 +74,11 @@ O cursor personalizado responde a diferentes elementos:
 - **Fonts**: Google Fonts API
 - **Hosting**: Compatível com qualquer servidor estático
 
-## 👨‍💻 Autor
 
-**Gabriel Napoleão** - Designer Gráfico, Artista e Comunicador
+<div align="center">
 
-- 🌐 **Portfólio**: [Site atual]
-- 📧 **Email**: gabrielnapo2004@gmail.com
-- 📱 **Instagram**: [@hipgn.osis](https://www.instagram.com/hipgn.osis/)
-- 💼 **LinkedIn**: [Gabriel Napoleão](https://www.linkedin.com/in/gabriel-napoleão-20ab2b202)
-- 🎨 **Behance**: [gabrielnapoleo](https://www.behance.net/gabrielnapoleo)
+### 🌟 **Se este projeto foi útil, considere dar uma estrela!** ⭐
 
-## 📄 Licença
+**[⬆ Voltar ao Topo](#-portfólio-gabriel-napoleão)**
 
-© 2025 Gabriel Napoleão. Todos os direitos reservados.
-
----
-
-### 🌟 Se este projeto foi útil como referência, considere dar uma estrela!
-
-⬆️ [Voltar ao Topo](#-portfólio-gabriel-napoleão)
+</div>
