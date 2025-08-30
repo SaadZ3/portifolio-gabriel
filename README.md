@@ -46,21 +46,12 @@ O cursor personalizado responde a diferentes elementos:
 ### **Opção 2: Uso Direto**
 - Ou acesse online <a href="https://napo-zf2f.vercel.app" target="_blank">aqui</a>
 
-## 💻 Tecnologias Utilizadas
 
-### Frontend
-- **HTML5**: Estrutura semântica
-- **CSS3**: Styling moderno com custom properties
-- **JavaScript (Vanilla)**: Interatividade sem frameworks
-- **ScrollReveal.js**: Animações de scroll
-- **Font Awesome**: Ícones sociais
-- **Google Fonts**: Tipografia (Inter + Raleway)
 
-### Recursos Externos
-- **CDN**: Font Awesome via Cloudflare
-- **Fonts**: Google Fonts API
-- **Hosting**: Compatível com qualquer servidor estático
 
+
+
+---
 
 <div align="center">
 
