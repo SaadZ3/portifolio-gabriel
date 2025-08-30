@@ -29,11 +29,6 @@ O cursor personalizado responde a diferentes elementos:
 - **Hover em Links**: Redução com transparência
 - **Blend Mode**: Efeito de inversão visual
 
-### Sistema de Navegação
-- **Scroll Suave**: Navegação fluida entre seções
-- **Header Dinâmico**: Adapta-se ao scroll da página
-- **Menu Mobile**: Interface responsiva para dispositivos móveis
-
 ## 🚀 Como Executar
 
 ### Opção 1: Execução Local
