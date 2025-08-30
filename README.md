@@ -1,5 +1,5 @@
 # 🎨 Portfólio Landing Page
-Um portfólio web interativo e responsivo para designer gráfico com interface moderna e experiência visual imersiva.
+> Um portfólio web interativo e responsivo para designer gráfico com interface moderna e experiência visual imersiva.
 
 ## 📖 Sobre o Projeto
 Este projeto apresenta o portfólio digital de Gabriel Napoleão, designer gráfico e artista visual. O site combina design minimalista com interações sofisticadas, criando uma experiência envolvente para apresentar trabalhos criativos.
@@ -12,12 +12,6 @@ O portfólio apresenta uma curadoria de projetos visuais inspirados em álbuns m
 - **Galeria Interativa**: Sistema de modal com visualização expandida das obras
 - **Animações Fluidas**: Transições suaves e efeitos de scroll personalizados
 - **Design Moderno**: Estética contemporânea com gradientes e glassmorphism
-
-### Conceitos Demonstrados
-- **Design Web Responsivo**: Layout fluido e adaptável
-- **JavaScript**: Interações sem dependências externas
-- **CSS Moderno**: Custom properties, flexbox, grid e animações
-- **UX/UI Design**: Experiência do usuário otimizada e interface intuitiva
 
 ## 🎯 Como Funciona
 
@@ -54,10 +48,8 @@ O cursor personalizado responde a diferentes elementos:
     └── fotosite.png
 ```
 
-### Opção 2: Hospedagem Web
-- Faça upload dos arquivos para qualquer servidor web
-- Não requer configuração especial ou dependências server-side
-- Compatível com GitHub Pages, Netlify, Vercel, etc.
+### **Opção 2: Uso Direto**
+- Ou acesse online <a href="https://napo-zf2f.vercel.app" target="_blank">aqui</a>
 
 ## 💻 Tecnologias Utilizadas
 
