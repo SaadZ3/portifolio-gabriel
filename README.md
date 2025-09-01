@@ -1,4 +1,4 @@
-# 🎨 Portfólio Landing Page
+# Portfólio Landing Page
 > Um portfólio web interativo e responsivo para designer gráfico com interface moderna e experiência visual imersiva.
 
 ## 📖 Sobre o Projeto
